@@ -1,0 +1,48 @@
+{
+  "name": "scrabble-score-kata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:triptease/scrabble-score-kata.git",
+  "author": "Tijanif <fulani07@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "verbose": true,
+    "testTimeout": 1000,
+    "transform": {
+      ".(ts|js)$": "ts-jest"
+    },
+    "testRegex": "\\.tests?\\.(js|ts)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "globals": {
+      "ts-jest": {
+        "isolatedModules": true
+      }
+    },
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "modulePaths": [
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "^test/(.*)$": "<rootDir>/test/$1"
+    }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/jest": "^28.1.3",
+    "jest": "^28.1.2",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
